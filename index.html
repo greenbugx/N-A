@@ -162,6 +162,52 @@
       border-top: 1px solid #333333;
       margin-top: 20px;
     }
+        /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .header {
+        position: static;
+        padding: 10px;
+      }
+
+      .container {
+        margin-top: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+      }
+
+      .userinfo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        min-height: auto;
+      }
+
+      .skills {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+      }
+
+      .about {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+      }
+
+      h1, h2 {
+        font-size: 14px;
+      }
+
+      .userinfo, .skills, .about {
+        padding: 10px;
+      }
+
+      li, p {
+        font-size: 14px;
+        padding: 3px;
+      }
+
+      .forum-post {
+        padding: 8px;
+      }
+    }
   </style>
 </head>
 <body>
