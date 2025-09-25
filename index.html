@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Terminal Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: 'Courier New', monospace;
+      line-height: 1.4;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .header {
+      background-color: #111111;
+      padding: 10px 20px;
+      border-bottom: 1px solid #333333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+
+    .header h1 {
+      color: #ffffff;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 60px auto 20px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto auto;
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .userinfo, .skills, .about {
+      background-color: #111111;
+      padding: 15px;
+      border: 1px solid #333333;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .userinfo {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      min-height: 400px;
+    }
+
+    .skills {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+
+    .about {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+    }
+
+    h1, h2 {
+      color: #ffffff;
+      margin-bottom: 15px;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #333333;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: 8px;
+      padding: 5px;
+      background-color: #1a1a1a;
+      border-left: 3px solid #444444;
+      padding-left: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      padding: 5px;
+      background-color: #1a1a1a;
+      border-left: 3px solid #444444;
+      padding-left: 10px;
+    }
+
+    .blink {
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .typewriter {
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 3s steps(40, end);
+      border-right: 2px solid #ffffff;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    a {
+      color: #66ccff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #99ddff;
+      text-decoration: underline;
+    }
+
+    .forum-post {
+      margin-bottom: 15px;
+      padding: 10px;
+      background-color: #1a1a1a;
+      border: 1px solid #333333;
+    }
+
+    .post-header {
+      font-size: 12px;
+      color: #cccccc;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    .post-content {
+      color: #ffffff;
+      line-height: 1.3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111111;
+      color: #666666;
+      font-size: 12px;
+      border-top: 1px solid #333333;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Personal Dread Forum</h1>
+  </div>
+
+  <div class="container">
+    <div class="userinfo">
+      <h1 class="typewriter">User Profile_</h1>
+      <div class="forum-post">
+        <div class="post-header">Username: Diku.py | Registered: 2025-26-05 | Posts: N/A</div>
+        <div class="post-content">
+          <p><strong>Name:</strong> N/A</p>
+          <p><strong>Email:</strong> <a href="mailto:greenbugx@proton.me">greenbugx@proton.me</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/greenbugx">@greenBugX</a></p>
+          <p><strong>Role:</strong> Human</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills">
+      <h2>Skills Matrix_</h2>
+      <ul>
+        <li>HTML/CSS/JS - Advanced</li>
+        <li>Python - Intermediate</li>
+        <li>Node.js - Intermediate</li>
+        <li>Cybersecurity - Beginner</li>
+        <li>Git & Version Control - Proficient</li>
+      </ul>
+    </div>
+
+    <div class="about">
+      <h2>About Thread_</h2>
+      <div class="forum-post">
+        <div class="post-header">Thread Started: 25-10-2025 | Last Reply: N/A | Views: 8020526</div>
+        <div class="post-content">
+          <p>Hey there! I'm a passionate developer diving deep into the shadows of code. Specializing in secure systems and terminal wizardry. When not hacking away at projects, I'm volunteering as "NOTHING" on underground forums, keeping the discourse civil(ish).</p>
+          <p>One of us? Nah, but close enough. Exploring open-source exploits and ethical breaches for fun and profit. Drop a line if you need a hand with that pesky vuln.</p>
+          <p><em>Powered by caffeine and curiosity.</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Personal Dread. All rights reversed. No logs, no traces.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Simple interactivity: toggle post visibility on click
+      const posts = document.querySelectorAll('.forum-post');
+      posts.forEach(post => {
+        post.addEventListener('click', () => {
+          post.style.backgroundColor = post.style.backgroundColor === 'rgba(26, 26, 26, 0.5)' ? '#1a1a1a' : 'rgba(26, 26, 26, 0.5)';
+        });
+      });
+
+      // Terminal-like cursor blink for headers
+      const headers = document.querySelectorAll('h1, h2');
+      headers.forEach(header => {
+        header.classList.add('blink');
+      });
+    });
+  </script>
+</body>
+</html>
