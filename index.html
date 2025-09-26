@@ -226,6 +226,29 @@
       /* Removed default display: none to allow JS control */
     }
 
+    .captcha-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .captcha-logo {
+      width: 50px; /* Adjust size as needed */
+      height: auto;
+      margin-right: 10px; /* Space between logo and text */
+      vertical-align: middle;
+    }
+
+    .captcha-title {
+      color: #ffffff;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #333333;
+      padding-bottom: 5px;
+      flex-grow: 1;
+    }
+
     .captcha-text {
       color: #ffffff;
       margin-bottom: 10px;
@@ -338,7 +361,10 @@
   </div>
 
   <div class="captcha-container" id="captcha-container">
-    <h2>0xNA CAPTCHA v1_</h2>
+    <div class="captcha-header">
+      <img src="lock-nobg.png" alt="0xNA CAPTCHA Logo" class="captcha-logo">
+      <h2 class="captcha-title">0xNA CAPTCHA v1_</h2>
+    </div>
     <div class="forum-post">
       <div class="post-header">Prove You're Human</div>
       <div class="post-content">
